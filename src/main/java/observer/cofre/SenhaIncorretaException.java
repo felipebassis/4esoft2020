@@ -1,6 +1,6 @@
 package observer.cofre;
 
-public class SenhaIncorretaException extends RuntimeException {
+public class SenhaIncorretaException extends Exception {
     public SenhaIncorretaException(String message) {
         super(message);
     }

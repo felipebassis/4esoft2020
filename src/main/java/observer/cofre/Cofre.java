@@ -25,7 +25,7 @@ public class Cofre {
 		this.cofreFechadoListeners.forEach(CofreFechadoListener::cofreFoiFechado);
 	}
 
-	public void abrir(int senhaInformada) {
+	public void abrir(int senhaInformada) throws SenhaIncorretaException {
 		if (senhaInformada == this.senha) {
 			this.aberto = true;
 			cofreAbertoListeners.forEach(CofreAbertoListener::cofreFoiAberto);

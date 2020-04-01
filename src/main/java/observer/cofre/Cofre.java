@@ -32,6 +32,7 @@ public class Cofre {
 			return;
 		}
 		cofreSenhaIncorretaListeners.forEach(listener -> listener.senhaIncorretaFoiInformada(senhaInformada));
+		throw new SenhaIncorretaException("A senha " + senhaInformada + " é senha incorreta.");
 	}
 
 	public void addListener(CofreListener listener) {

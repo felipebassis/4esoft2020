@@ -1,5 +1,5 @@
 package observer.cofre;
 
-public interface CofreAbertoListener extends CofreListener{
+public interface CofreAbertoListener extends CofreListener {
     void cofreFoiAberto();
 }
